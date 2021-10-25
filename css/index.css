@@ -1,0 +1,120 @@
+@import url("./reset.css");
+@import url("./style.css");
+
+:root {
+  --primary-1: #77acf1;
+  --primary-2: #b0d0fa;
+  --accent-1: #f0ebcc;
+  --accent-2: #f5ebad;
+  --accent-3: #f5df54;
+  --neutral-1: #fff;
+  --neutral-2: #343a40;
+}
+
+body {
+  margin: 0;
+}
+
+/** Header Section */
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.07), 0 -3px 7px 1px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  background: var(--neutral-1);
+  font-family: Helvetica, sans-serif;
+}
+
+#logo,
+ul {
+  display: flex;
+  list-style: none;
+}
+
+#logo {
+  margin: 10px;
+}
+
+#logo p {
+  font-size: 16px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+ul {
+  flex: 1;
+  text-align: center;
+  align-items: center;
+  margin: 30px;
+
+  /* padding-top: 10px */
+}
+
+.nav-link a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--neutral-2);
+  margin-left: 15px;
+}
+
+#header-img {
+  width: 50px;
+}
+
+#login a {
+  background: var(--primary-1);
+  color: var(--neutral-1);
+  padding: 15px;
+  text-align: center;
+  margin-left: 15px;
+}
+
+#sign-up a {
+  border: solid 2px var(--primary-1);
+  color: var(--neutral-2);
+  margin-left: 15px;
+  text-align: center;
+  padding: 15px;
+}
+
+#login a:hover {
+  background: var(--accent-2);
+  color: var(--neutral-2);
+}
+
+#sign-up a:hover {
+  background: var(--accent-2);
+  border: none;
+  color: var(--neutral-1);
+  cursor: pointer;
+}
+
+/** Footer Section */
+footer {
+  width: 100%;
+}
+
+#footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 0;
+  background: var(--primary-2);
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  color: var(--neutral-1);
+  height: 70px;
+}
+
+footer ul {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  ul {
+    margin: 0;
+  }
+}

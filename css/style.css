@@ -1,0 +1,103 @@
+.bg-image {
+  background-image: url("../images/Abuja1.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bg-image h1 {
+  font-size: 78px;
+  color: var(--accent-3);
+  font-weight: 600;
+}
+
+.bg-image p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #f1e8ad;
+}
+
+.section2,
+.section3 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.section2-video {
+  display: flex;
+
+  /* justify-content: space-arou; */
+  flex-direction: row;
+}
+
+.section2 p {
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  color: var(--neutral-2);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  background-color: var(--neutral-1);
+  border: 1px solid var(--primary-1);
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.section2-title,
+.section3 h2 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--neutral-2);
+  margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section3 {
+  height: 250px;
+  background: #f7f5e8;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#submit {
+  background-color: var(--primary-1);
+  color: #f0ebcc;
+  border: 1px solid #f0ebcc;
+  width: 120px;
+  height: 35px;
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+
+#submit:hover {
+  background-color: #f0ebcc;
+  color: #77acf1;
+  border: 1px solid #77acf1;
+}
+
+#form-control {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+input::placeholder {
+  color: #343a40;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#email {
+  border: 1px solid #77acf1;
+  height: 30px;
+  width: 200px;
+}
